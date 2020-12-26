@@ -1,8 +1,8 @@
 import express from 'express';
+import indexController from '../controller/index.controller';
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.send("helllo");
-});
+
+router.get('/', indexController.post);
 
 export default router;
